@@ -7,24 +7,20 @@
 </head>
 <body>
     <script>
-        let number = prompt("Enter a number from 1 to 100", "1-100");
+        prompt("Enter a number from 1 to 100", "1-100");
         let min = 0;
         let max = 100;
-        let n;
-        let answer;
-        while (min <= max){
-            n = Math.floor((min+max)/2);
-            answer = prompt(`Is your number > ${n}, < ${n} or == ${n}?`, "");
-            if (answer == ">"){
-                alert("Number is >, continuing...");
+        while (true){
+            let n = Math.floor((min+max)/2);
+            let answer = prompt(`Is your number > ${n}, < ${n} or == ${n}?`, "");
+            if (answer === ">"){
                 min = n + 1;
             }
-            else if (answer == "<") {
-                alert("Number is <, continuing...");
+            else if (answer === "<") {
                 max = n - 1;
             }
-            else if (answer == "=="){
-                alert("Number == " + number);
+            else if (answer === "=="){
+                alert("Bingo!");
                 break;
             }
         }
