@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <script>
+        let x = prompt("Enter X: ", "X");
+        let y = prompt("Enter Y: ", "y");
+        if(x > 0 && y > 0){
+            alert("First quarter");
+        }
+        else if(x < 0 && y > 0){
+            alert("Second quarter");
+        }
+        else if(x < 0 && y < 0){
+            alert("Third quarter");
+        }
+        else if(x > 0 && y < 0){
+            alert("Fourth quarter");
+        }
+        else if(x == 0 && y == 0){
+            alert("Origin");
+        }
+        else if(x == 0){
+            alert("Point on the x-axis");
+        }
+        else if(y == 0){
+            alert("Point on the y-axis");
+        }
+    </script>
+</body>
+</html>

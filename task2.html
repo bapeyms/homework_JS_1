@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <script>
+        let goods_amount = prompt("Enter the amount of goods: ", "amount");
+        let price_per_one_goody = prompt("Enter the price per one goody: ", "price per one goody");
+        let total_price = goods_amount * price_per_one_goody;
+        let discount = 0;
+        if(total_price >= 100){
+            discount = total_price * 0.03;
+        }
+        else if(total_price >= 200){
+            discount = total_price * 0.05;
+        }
+        else if(total_price >= 300){
+            discount = total_price * 0.07;
+        }
+        alert("Price after the discount:" + discount.toFixed(2));
+    </script>
+</body>
+</html>

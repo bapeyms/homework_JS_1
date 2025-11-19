@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+<body>
+    <script>
+        let isCorrect = false;
+        while (!isCorrect){
+            let fullname = prompt("Enter a full name: ", "Surname, Name, Paternal Name");
+            let gender = prompt("Enter a gender: ", "M/F");
+            let age = +prompt("Enter an age: ", "Age");
+            let email = prompt("Enter an email: ", "Email");
+            let information = "Fullname: " + fullname + "\n" 
+            + "Gender: " + gender + "\n" 
+            + "Age: " + age + "\n" + age 
+            + "\n" + "Email: " + email + "\n\n" 
+            + "Is everything correct?\n";
+            
+            let answer = confirm(information);
+            if(answer){
+                alert("Thank you for provided information!");
+                isCorrect = true;
+            }
+            else{
+                alert("Let's try one more time!")
+            }
+        }
+    </script>
+</body>
+</html>

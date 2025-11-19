@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+    <script>
+        let ticket_number = prompt("Enter a ticket number (6 numbers): ", "6 numbers");
+        let sum1 = 0;
+        let sum2 = 0;
+        for (let i = 0; i < 3; i++){
+            sum2 += ticket_number % 10;
+            ticket_number = Math.floor(ticket_number/10);
+        }
+        for (let i = 0; i < 3; i++){
+            sum1 += ticket_number % 10;
+            ticket_number = Math.floor(ticket_number/10);
+        }
+        if (sum1 == sum2){
+            alert("Lucky ticket (" + "first half =" + sum1 + " | second half = " + sum2 + ")");
+        }
+        else{
+            alert("Common ticket (" + "first half =" + sum1 + " | second half = " + sum2 + ")");
+        }
+    </script>
+</body>
+</html>
